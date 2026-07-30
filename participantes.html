@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Cargar participantes</title>
+
+  <link rel="stylesheet" href="css/participantes.css">
+</head>
+
+<body>
+
+  <main class="contenedor">
+
+    <section class="tarjeta tarjeta-grande">
+
+      <div class="encabezado-participantes">
+
+        <p class="paso">
+          Paso 2
+        </p>
+
+        <h1 id="titulo-torneo">
+          Cargar participantes
+        </h1>
+
+        <p>
+          Escribí el nombre de cada jugador y el equipo que va a utilizar.
+        </p>
+
+        <p class="aviso-equipos">
+          Los equipos no se podrán cambiar hasta que termine la fecha.
+        </p>
+
+      </div>
+
+      <form id="form-participantes">
+
+        <div id="lista-participantes"></div>
+
+        <p
+          id="mensaje-error"
+          class="mensaje-error"
+        ></p>
+
+        <div class="acciones">
+
+          <button
+            type="button"
+            id="boton-volver"
+            class="boton-secundario"
+          >
+            Volver
+          </button>
+
+          <button
+            type="submit"
+            class="boton-principal"
+          >
+            Comenzar torneo
+          </button>
+
+        </div>
+
+      </form>
+
+    </section>
+
+  </main>
+
+  <script src="js/participantes.js"></script>
+
+</body>
+</html>

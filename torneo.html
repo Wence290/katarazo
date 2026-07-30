@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Torneo FIFA</title>
+
+  <link rel="stylesheet" href="css/torneo.css">
+</head>
+
+<body>
+
+  <header class="header-torneo">
+
+    <div class="header-contenido">
+
+      <div>
+        <p class="subtitulo">Torneo FIFA</p>
+
+        <h1 id="nombre-torneo">
+          Nombre del torneo
+        </h1>
+      </div>
+
+      <button
+        type="button"
+        id="boton-nuevo-torneo"
+        class="boton-nuevo-torneo"
+      >
+        Nuevo torneo
+      </button>
+
+    </div>
+
+  </header>
+
+  <main class="contenedor-torneo">
+
+    <section class="panel-resumen">
+
+      <article class="resumen-card">
+        <span>Jugadores</span>
+        <strong id="cantidad-jugadores">0</strong>
+      </article>
+
+      <article class="resumen-card">
+        <span>Fecha actual</span>
+        <strong id="fecha-actual">1 de 4</strong>
+      </article>
+
+      <article class="resumen-card">
+        <span>Partidos por fecha</span>
+        <strong id="partidos-por-fecha">0</strong>
+      </article>
+
+    </section>
+
+    <nav
+      id="navegacion-fechas"
+      class="navegacion-fechas"
+    ></nav>
+
+    <section class="seccion-partidos">
+
+      <div class="titulo-seccion">
+
+        <div>
+          <p class="etiqueta-seccion">
+            Fixture
+          </p>
+
+          <h2 id="titulo-fecha">
+            Fecha 1
+          </h2>
+        </div>
+
+        <p
+          id="estado-fecha"
+          class="estado-fecha"
+        >
+          Resultados pendientes
+        </p>
+
+      </div>
+
+      <div
+        id="lista-partidos"
+        class="lista-partidos"
+      ></div>
+
+      <p
+        id="mensaje-partidos"
+        class="mensaje-partidos"
+      ></p>
+
+      <div class="acciones-fecha">
+
+        <button
+          type="button"
+          id="boton-guardar-resultados"
+          class="boton-guardar"
+        >
+          Guardar resultados
+        </button>
+
+        <button
+          type="button"
+          id="boton-finalizar-fecha"
+          class="boton-finalizar"
+        >
+          Finalizar fecha
+        </button>
+
+      </div>
+
+    </section>
+
+    <section class="seccion-tabla">
+
+      <div class="titulo-seccion">
+
+        <div>
+          <p class="etiqueta-seccion">
+            Clasificación
+          </p>
+
+          <h2>Tabla de posiciones</h2>
+        </div>
+
+      </div>
+
+      <div class="tabla-contenedor">
+
+        <table class="tabla-posiciones">
+
+          <thead>
+            <tr>
+              <th>Pos.</th>
+              <th>Jugador</th>
+              <th>PJ</th>
+              <th>PG</th>
+              <th>PE</th>
+              <th>PP</th>
+              <th>GF</th>
+              <th>GC</th>
+              <th>DG</th>
+              <th>Pts.</th>
+            </tr>
+          </thead>
+
+          <tbody id="cuerpo-tabla"></tbody>
+
+        </table>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="js/torneo.js"></script>
+
+</body>
+</html>

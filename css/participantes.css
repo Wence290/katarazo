@@ -1,0 +1,316 @@
+/* =========================
+   PARTICIPANTES
+========================= */
+
+body{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../img/russell.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color:white;
+}
+
+.contenedor{
+    width:100%;
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:40px 20px;
+}
+
+.tarjeta{
+    width:100%;
+    max-width:900px;
+
+    background:rgba(0,0,0,.78);
+
+    border-radius:18px;
+
+    padding:40px;
+
+    backdrop-filter: blur(8px);
+
+    box-shadow:0 15px 40px rgba(0,0,0,.45);
+}
+
+.encabezado-participantes{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.encabezado-participantes h1{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.encabezado-participantes p{
+    color:#d8d8d8;
+}
+
+.aviso-equipos{
+
+    margin-top:20px;
+
+    background:#1b5e20;
+
+    padding:12px;
+
+    border-radius:8px;
+
+    color:white;
+
+    font-size:14px;
+}
+
+#lista-participantes{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.participante{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    background:#1d1d1d;
+
+    border:2px solid transparent;
+
+    border-radius:15px;
+
+    padding:18px;
+
+    transition:.25s;
+}
+
+.participante:hover{
+
+    border-color:#32cd32;
+
+    transform:translateY(-2px);
+
+}
+
+.numero-jugador{
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    background:#32cd32;
+
+    color:black;
+
+    font-weight:bold;
+
+    font-size:22px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-shrink:0;
+}
+
+.datos-participante{
+
+    flex:1;
+}
+
+.datos-participante h2{
+
+    margin-bottom:15px;
+
+    font-size:20px;
+}
+
+.fila-campos{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:20px;
+}
+
+.campo{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+}
+
+.campo label{
+
+    font-size:14px;
+
+    font-weight:bold;
+}
+
+.campo input{
+
+    height:48px;
+
+    border:none;
+
+    border-radius:10px;
+
+    padding:0 15px;
+
+    font-size:15px;
+
+    background:#2f2f2f;
+
+    color:white;
+
+    outline:none;
+
+    transition:.2s;
+}
+
+.campo input:focus{
+
+    border:2px solid #32cd32;
+
+    background:#383838;
+}
+
+.acciones{
+
+    margin-top:35px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:20px;
+}
+
+.boton-principal{
+
+    flex:1;
+
+    height:52px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#32cd32;
+
+    color:black;
+
+    font-size:17px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.2s;
+}
+
+.boton-principal:hover{
+
+    background:#43ff43;
+}
+
+.boton-secundario{
+
+    width:170px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#4d4d4d;
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.2s;
+}
+
+.boton-secundario:hover{
+
+    background:#666;
+}
+
+.mensaje-error{
+
+    text-align:center;
+
+    color:#ff6b6b;
+
+    margin-top:18px;
+
+    font-weight:bold;
+
+    min-height:22px;
+}
+
+@media(max-width:768px){
+
+    .tarjeta{
+
+        padding:20px;
+    }
+
+    .encabezado-participantes h1{
+
+        font-size:30px;
+    }
+
+    .fila-campos{
+
+        grid-template-columns:1fr;
+    }
+
+    .participante{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+    }
+
+    .numero-jugador{
+
+        width:45px;
+        height:45px;
+        font-size:18px;
+    }
+
+    .acciones{
+
+        flex-direction:column;
+    }
+
+    .boton-secundario,
+    .boton-principal{
+
+        width:100%;
+    }
+
+}

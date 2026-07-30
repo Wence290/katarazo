@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Torneo FIFA</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <main class="home">
+
+    <section class="hero">
+
+      <div class="torneo-card">
+
+        <h2>Nueva partida</h2>
+
+        <form id="torneo-form">
+
+          <div class="campo">
+
+            <label for="nombre-torneo">
+              Nombre del torneo
+            </label>
+
+            <input
+              type="text"
+              id="nombre-torneo"
+              placeholder="Ejemplo: Las tetas de Facu"
+              maxlength="40"
+              required
+            >
+
+          </div>
+
+          <div class="campo">
+
+            <label for="cantidad-jugadores">
+              Cantidad de jugadores
+            </label>
+
+            <select
+              id="cantidad-jugadores"
+              name="cantidad-jugadores"
+              required
+            >
+              <option value="4">4</option>
+              <option value="6" selected>6</option>
+              <option value="8">8</option>
+              <option value="10">10</option>
+            </select>
+
+          </div>
+
+          <button
+            type="submit"
+            class="boton-crear"
+          >
+            Crear torneo
+          </button>
+
+          <p
+            id="mensaje-error"
+            class="mensaje-error"
+          ></p>
+
+        </form>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="./js/script.js"></script>
+
+</body>
+</html>

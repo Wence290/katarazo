@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Cambiar equipos</title>
+
+  <link
+    rel="stylesheet"
+    href="css/cambiar-equipos.css"
+  >
+</head>
+
+<body>
+
+  <main class="contenedor-cambio">
+
+    <section class="panel-cambio">
+
+      <header class="encabezado-cambio">
+
+        <p class="paso-fecha">
+          Preparación de la próxima fecha
+        </p>
+
+        <h1 id="titulo-cambio">
+          Equipos para la próxima fecha
+        </h1>
+
+        <p>
+          Cada jugador puede mantener su equipo
+          actual o escribir uno nuevo.
+        </p>
+
+        <div class="aviso">
+          Al comenzar la fecha, los equipos quedarán
+          bloqueados hasta que termine.
+        </div>
+
+      </header>
+
+      <form id="form-cambio-equipos">
+
+        <div
+          id="lista-cambio-equipos"
+          class="lista-cambio-equipos"
+        ></div>
+
+        <p
+          id="mensaje-error"
+          class="mensaje-error"
+        ></p>
+
+        <button
+          type="submit"
+          class="boton-comenzar"
+        >
+          Comenzar próxima fecha
+        </button>
+
+      </form>
+
+    </section>
+
+  </main>
+
+  <script src="js/cambiar-equipos.js"></script>
+
+</body>
+</html>
