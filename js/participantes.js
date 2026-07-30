@@ -60,7 +60,7 @@ function crearCamposParticipantes() {
                 type="text"
                 id="nombre-${numeroJugador}"
                 class="input-nombre"
-                placeholder="Ejemplo: Wences"
+                placeholder="Ejemplo: Delirio"
                 autocomplete="off"
                 required
               >
@@ -75,7 +75,7 @@ function crearCamposParticipantes() {
                 type="text"
                 id="equipo-${numeroJugador}"
                 class="input-equipo"
-                placeholder="Ejemplo: Real Madrid"
+                placeholder="Ejemplo: Katara"
                 autocomplete="off"
                 required
               >
